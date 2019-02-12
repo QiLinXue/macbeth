@@ -1,0 +1,24 @@
+.tab { margin-left: 100px; }
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+    width: 200px;
+    height: 40px;
+}
+
+.first {
+    width: 100%;
+    height: 1000px;
+    background: #ccc;
+}
+
+.second {
+    width: 100%;
+    height: 1000px;
+    background: #999;
+}
