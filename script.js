@@ -37,6 +37,22 @@ function revealRandom(){
     document.getElementById("quotation").innerHTML = document.getElementsByName(lineId)[0].innerHTML + "<br/>Source: " + lineId
 }
 
+function revealMoreF(){
+    var placeholder = document.getElementById("quotation").innerHTML;
+    line = line + 1
+    lineId = act+"."+scene+"."+line
+    var next = document.getElementsByName(lineId)[0].innerHTML
+    document.getElementById("quotation").innerHTML = placeholder+"<br/>"+next
+}
+
+function revealMoreB(){
+    var placeholder = document.getElementById("quotation").innerHTML;
+    line = line - 1
+    lineId = act+"."+scene+"."+line
+    var next = document.getElementsByName(lineId)[0].innerHTML
+    document.getElementById("quotation").innerHTML = next+"<br/>"+placeholder
+}
+
 input.addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
