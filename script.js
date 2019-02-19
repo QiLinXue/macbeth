@@ -12,7 +12,7 @@ function randomQuote(){
     while(true){
         act = Math.floor(Math.random() * 2) + 1
         scene = Math.floor(Math.random() * 7) + 1
-        line =  Math.floor(Math.random() * 7) + 1
+        line =  Math.floor(Math.random() * 181) + 1
         lineId = act+"."+scene+"."+line
         try{
             document.getElementById("quotation").innerHTML = document.getElementsByName(lineId)[0].innerHTML
