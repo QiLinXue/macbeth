@@ -9,10 +9,10 @@ function getQuote(){
 var act, scene, line = 0;
 var lineId = act+"."+scene+"."+line
 function randomQuote(){
+    act = 3
+    scene = Math.floor(Math.random() * 6) + 1
     while(true){
-        act = Math.floor(Math.random() * 2) + 1
-        scene = Math.floor(Math.random() * 7) + 1
-        line =  Math.floor(Math.random() * 181) + 1
+        line =  Math.floor(Math.random() * 168) + 1
         lineId = act+"."+scene+"."+line
         try{
             document.getElementById("quotation").innerHTML = document.getElementsByName(lineId)[0].innerHTML
